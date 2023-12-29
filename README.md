@@ -41,7 +41,7 @@ This is likely only needed for Steam. Seems there is a bug where if you launch S
 **We get past this accordingly.**
 
 - Activities, search for Steam.
-- Right click, launch with integrated graphics.
+- Right click, *launch with integrated graphics*.
   
 ![Locate and launch Steam using INTEGRATED graphics](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/Steam-1.png)
 
