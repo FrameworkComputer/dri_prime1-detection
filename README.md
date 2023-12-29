@@ -1,5 +1,5 @@
 # dri_prime1-detection and Steam game setup instructions
-Simple script to make verify if desired applications are running with discrete graphics
+Simple script to verify if desired applications are running with discrete graphics
 
 ## No Processes using discrete graphics, returns as empty.
 
