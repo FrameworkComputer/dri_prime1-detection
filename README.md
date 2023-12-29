@@ -1,4 +1,4 @@
-# dri_prime1-detection
+# dri_prime1-detection and Steam game setup instructions
 Simple script to make verify if desired applications are running with discrete graphics
 
 ## No Processes using discrete graphics, returns as empty.
@@ -31,6 +31,8 @@ Step 4: Run this to detect if the discrete card is used for that application.
 sudo sh amd-prime-dri.sh
 ```
 -------------------------------------------------------
+
+## Steam game setup instructions
 
 ### When to use: 
 
