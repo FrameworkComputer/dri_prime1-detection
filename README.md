@@ -36,7 +36,7 @@ sudo sh amd-prime-dri.sh
 
 ### When to use: 
 
-This is likely only needed for Steam. Seems there is a bug where if you launch steam normally, it doesn't launch correctly (Ubuntu or Fedora)
+This is likely only needed for Steam. Seems there is a bug where if you launch Steam normally, it doesn't launch correctly (Ubuntu or Fedora)
 
 **We get past this accordingly.**
 
