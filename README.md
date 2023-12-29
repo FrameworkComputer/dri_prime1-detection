@@ -1,18 +1,25 @@
 # dri_prime1-detection
 Simple script to make verify if desired applications are running with discrete graphics
 
-## No Processes using discrete graphics returns as empty.
+## No Processes using discrete graphics, returns as empty.
 
-## Processes showing as usng discrete graphics provides process name and ID.
+## Indicates which processes are using discrete graphics, provides process name and ID.
 
 This was put together rather quickly, I welcome clean up/improvements. 
 
 ![Example of this script in use](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/PRIME.png)
 
 
-Step 1: Download the script to your desired directory.
+Step 1: Open a terminal window and download the script to your desired directory.
 
-Step 2: Open a terminal window.
+```
+git clone https://github.com/FrameworkComputer/dri_prime1-detection.git
+```
+Step 2: Change directories to the access the script.
+
+```
+cd dri_prime1-detection/ 
+```
 
 Step 3: Make it executable.
 ```
