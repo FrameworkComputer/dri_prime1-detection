@@ -28,6 +28,8 @@ chmod +x dGPU-detect.AppImage
 
 Step 4: Run this to detect if the discrete card is used for that application.
 
+>TIP: Alt and Tab keys to move you off of an actively launched game. Thus, allowing you to launch the AppImage. Then Alt Tab back to the game.
+
 `./dGPU-detect.AppImage` or simply double click the downloaded AppImage file.
 
 **If the dGPU is not running applications:**
