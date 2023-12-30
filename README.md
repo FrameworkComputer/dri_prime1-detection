@@ -1,4 +1,4 @@
-# dri_prime1-detection and Steam game setup instructions
+# Discrete graphics usage detection
 
 A simple application to verify if desired applications are running with discrete graphics
 
