@@ -12,7 +12,7 @@ Step 1: Open a terminal window and download the AppImage to your desired directo
 *Ubuntu 22.04 users*:
 
 ```
-sudo apt install fuse python3-pyqt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
+sudo apt install libfuse2 python3-pyqt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
 ```
 
 *Fedora 39 users*:
