@@ -6,9 +6,18 @@ A simple application to verify if desired applications are running with discrete
 
 Step 1: Open a terminal window and download the AppImage to your desired directory.
 
+*Ubuntu 22.04 users*:
+
 ```
-wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
+sudo apt install fuse python3-pyqt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
 ```
+
+*Fedora 39 users*:
+
+```
+sudo dnf install python3-qt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
+```
+
 Step 2: Make it executable.
 ```
 chmod +x dGPU-detect.AppImage
