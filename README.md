@@ -6,6 +6,9 @@ A simple application to verify if desired applications are running with discrete
 
 Step 1: Open a terminal window and download the AppImage to your desired directory.
 
+- Open up a terminal (Ubuntu, Activities, search terminal. Fedora, horizonal line in the upper right, search terminal.
+- Copy and paste in the following depending on your specific distro listed below, followed by the enter key.
+
 *Ubuntu 22.04 users*:
 
 ```
