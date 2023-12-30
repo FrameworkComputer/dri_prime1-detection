@@ -1,35 +1,32 @@
 # dri_prime1-detection and Steam game setup instructions
-Simple script to verify if desired applications are running with discrete graphics
 
-## No Processes using discrete graphics, returns as empty.
+A simple application to verify if desired applications are running with discrete graphics
 
 ## Indicates which processes are using discrete graphics, provides process name and ID.
 
-This was put together rather quickly, I welcome clean up/improvements. 
-
-![Example of this script in use](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/PRIME.png)
-
-
-Step 1: Open a terminal window and download the script to your desired directory.
+Step 1: Open a terminal window and download the AppImage to your desired directory.
 
 ```
-git clone https://github.com/FrameworkComputer/dri_prime1-detection.git
+wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
 ```
-Step 2: Change directories to the access the script.
-
+Step 2: Make it executable.
 ```
-cd dri_prime1-detection/ 
-```
-
-Step 3: Make it executable.
-```
-chmod +x amd-prime-dri.sh
+chmod +x dGPU-detect.AppImage
 ```
 
 Step 4: Run this to detect if the discrete card is used for that application.
-```
-sudo sh amd-prime-dri.sh
-```
+
+`./dGPU-detect.AppImage` or simply double click the downloaded AppImage file.
+
+**If the dGPU is not running applications:**
+
+![No dGPU running any applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/no-dgpu.png)
+
+
+**If there the dGPU running running applications:**
+
+![dGPU running running applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/yes-dgpu.png)
+
 -------------------------------------------------------
 
 ## Steam game setup instructions for Ubuntu 22.04.3 LTS (Long Term Support)
