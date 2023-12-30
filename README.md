@@ -35,7 +35,7 @@ Step 4: Run this to detect if the discrete card is used for that application.
 ![No dGPU running any applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/no-dgpu.png)
 
 
-**If there the dGPU running applications:**
+**If the dGPU is running applications:**
 
 ![dGPU running running applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/yes-dgpu.png)
 
