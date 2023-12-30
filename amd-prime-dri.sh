@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List all processes with their PIDs and command names
-# An alternative to the AppImage for those who want a pure bash script.
+# An alternative to the AppImage for those who want a pure bash script
 ps -e -o pid=,comm= | while read -r proc_pid proc_name
 do
     # Check if the environment file exists for the process
