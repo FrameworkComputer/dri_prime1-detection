@@ -1,4 +1,4 @@
-## Marking this as private. Found a [better approach using CoreCtrl](https://gitlab.com/corectrl/corectrl) - CoreCtrl Reciples for importing [coming shortly](https://github.com/FrameworkComputer/corectrl-GPU-recipes). This will remain as "Plan B" if ever needed.
+## Marking this as private. Found a [better approach using CoreCtrl](https://gitlab.com/corectrl/corectrl) - CoreCtrl Recipes for importing [coming shortly](https://github.com/FrameworkComputer/corectrl-GPU-recipes). This will remain as "Plan B" if ever needed.
 
 # dri_prime1-detection and Steam game setup instructions
 Simple script to verify if desired applications are running with discrete graphics
