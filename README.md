@@ -197,7 +197,21 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 
 **With Steam open.**
 
-- Locate your game installed already or install it.
+- Upper left menu option called "Steam", pull down, select "Settings", go down to "Storage".
+- Click Add Drive, choose Add a new Steam library folder - the option will appear like it does here. Close the settings dialog.
+&nbsp;
+&nbsp;
+&nbsp;
+![Click Add Drive, choose Add a new Steam library folder](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/add-library.png)
+&nbsp;
+&nbsp;
+&nbsp;
+- Locate your game, install it to steamgames drive.&nbsp;
+
+![Locate your game, install it to steamgames drive](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/install-game.png)
+&nbsp;
+&nbsp;
+&nbsp;
 - Right click on the game, goto properties.
   
 ![Right click on the game, goto properties](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/steam-2.png)
