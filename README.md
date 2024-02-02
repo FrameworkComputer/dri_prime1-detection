@@ -41,18 +41,35 @@ Step 4: Run this to detect if the discrete card is used for that application.
 
 ![dGPU running running applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/yes-dgpu.png)
 
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
 -------------------------------------------------------
 
-## Steam game setup instructions for Ubuntu 22.04.3 LTS (Long Term Support)
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-### When to use: 
 
-This is likely only needed for Steam. Seems there is a bug where if you launch Steam normally, it doesn't launch correctly (Ubuntu or Fedora)
+## Steam game setup instructions for Ubuntu 22.04.3 LTS (Long Term Support) - One NVMe drive
 
-**We get past this accordingly.**
+### Configure Steam: 
 
-- Activities, search for Steam.
-- Right click, *launch with integrated graphics*.
+- Download Steam from https://store.steampowered.com/about/
+- Once the Deb package is downloaded, right click in, install via Software Center.
+- Once installed, browse to Activities in the upper left corner, click to open it, search for Steam.
   
 ![Locate and launch Steam using INTEGRATED graphics](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/Steam-1.png)
 
@@ -71,7 +88,7 @@ This is likely only needed for Steam. Seems there is a bug where if you launch S
 &nbsp;
 &nbsp;
 
-**Launch options section**
+**Launch options section for dGPU users**
 
 - Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
 
@@ -80,18 +97,155 @@ DRI_PRIME=1 %command%
 ```
 - Close the General box at the X, there is no save button or anything like that.
 
-----------------------------------------
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-  ## Steam game setup instructions for Fedora 39
 
-### When to use: 
+-------------------------------------------------------
 
-This is likely only needed for Steam. Seems there is a bug where if you launch Steam normally, it doesn't launch correctly (Ubuntu or Fedora)
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-**We get past this accordingly.**
 
-- Browse to the horizontal line in the upper left corner, click to open it, search for Steam.
-- Right click, *launch Steam normally with a single left click*.
+
+
+
+## Steam game setup instructions for Ubuntu 22.04.3 LTS (Long Term Support) - Two NVMe drives, installing games to secondary drive
+
+### Get your secondary drive ready
+
+![Format to Ext4 in Disks](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/format.png)
+- Open Disks program, label as steamgames,format to Ext4. Close Disks.
+&nbsp;
+&nbsp;
+&nbsp;
+- Open a terminal from the horizontal line in the upper left, search Terminal and open it.
+
+```
+cd /media && sudo mkdir steamgames
+```
+
+- Let's get the ownership and permissions sorted correctly.
+
+```
+sudo chown $USER:$USER steamgames/ && sudo chmod 700 steamgames/
+```
+Let's check our work:
+
+```
+ls -ld steamgames/
+```
+- You should see something like: drwx------. 1 youruser youruser 0 Month  day 00:00 steamgames/
+
+- Now, we need to get this directory to a place where it indentfies as the secondary NVMe drive.
+
+```
+sudo blkid | grep 'steamgames' | awk '{print $0}'
+```
+
+- As we labeled the drive as steamgames, we were able use awk to easily locate it and see something like this:
+
+```
+/dev/nvme1n1p1: LABEL="steamgames" UUID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+- We want the section (and yours will differ) UUID="b767cc57-0262-4ba5-be9d-b7f3387f3d59"
+
+- Now that we have this, we need to get this mounted by default and, make sure it plays nicely with Steam.
+
+- First, let's backup our fstab so if something goes horribly wrong, you can tell support you broke fstab, but you have a backup we can restore from. We'll open open the file from here as well.
+
+```
+sudo cp /etc/fstab /etc/fstab.bak && sudo nano /etc/fstab
+```
+
+- Append the following to the bottom of your file, remember, we are using YOUR UUID found in your blkid results:
+
+```
+UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,exec,auto  0 0
+```
+
+- Save the file with Ctrl X. Y key when asked.
+
+- Now reboot.
+
+
+
+### Configure Steam: 
+
+- Download Steam from https://store.steampowered.com/about/
+- Once the Deb package is downloaded, right click in, install via Software Center.
+- Once installed, browse to Activities in the upper left corner, click to open it, search for Steam.
+  
+![Locate and launch Steam using INTEGRATED graphics](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/Steam-1.png)
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+**With Steam open.**
+
+- Locate your game installed already or install it.
+- Right click on the game, goto properties.
+  
+![Right click on the game, goto properties](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/steam-2.png)
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+**Launch options section for dGPU users**
+
+- Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
+
+```
+DRI_PRIME=1 %command%
+```
+- Close the General box at the X, there is no save button or anything like that.
+
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+-------------------------------------------------------
+
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+
+
+  ## Steam game setup instructions for Fedora 39 - One NVMe drive
+
+### Configure Steam: 
+
+- Install Steam from the Software application in the dock. Search for Steam install the **Flatpak**.
+- Once installed, browse to the horizontal line in the upper left corner, click to open it, search for Steam.
   
 ![Locate and launch Steam normally](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/f39-steam1.png)
 
@@ -110,7 +264,7 @@ This is likely only needed for Steam. Seems there is a bug where if you launch S
 &nbsp;
 &nbsp;
 
-**Launch options section**
+**Launch options section for dGPU users**
 
 - Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
 
@@ -119,5 +273,184 @@ DRI_PRIME=1 %command%
 ```
 - Close the General box at the X, there is no save button or anything like that.
 
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+-------------------------------------------------------
+
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+## Steam game setup instructions for Fedora 39 - Two NVMe drives, installing games to secondary drive
+
+### Get your secondary drive ready
+
+![Format to Ext4 in Disks](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/format.png)
+- Open Disks program, label as steamgames,format to Ext4. Close Disks.
+&nbsp;
+&nbsp;
+&nbsp;
+- Open a terminal from the horizontal line in the upper left, search Terminal and open it.
+
+```
+cd /media && sudo mkdir steamgames
+```
+
+- Let's get the ownership and permissions sorted correctly.
+
+```
+sudo chown $USER:$USER steamgames/ && sudo chmod 700 steamgames/
+```
+Let's check our work:
+
+```
+ls -ld steamgames/
+```
+- You should see something like: drwx------. 1 youruser youruser 0 Month  day 00:00 steamgames/
+
+- Now, we need to get this directory to a place where it indentfies as the secondary NVMe drive.
+
+```
+sudo blkid | grep 'steamgames' | awk '{print $0}'
+```
+
+- As we labeled the drive as steamgames, we were able use awk to easily locate it and see something like this:
+
+```
+/dev/nvme1n1p1: LABEL="steamgames" UUID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+- We want the section (and yours will differ) UUID="b767cc57-0262-4ba5-be9d-b7f3387f3d59"
+
+- Now that we have this, we need to get this mounted by default and, make sure it plays nicely with Steam.
+
+- First, let's backup our fstab so if something goes horribly wrong, you can tell support you broke fstab, but you have a backup we can restore from. We'll open open the file from here as well.
+
+```
+sudo cp /etc/fstab /etc/fstab.bak && sudo nano /etc/fstab
+```
+
+- Append the following to the bottom of your file, remember, we are using YOUR UUID found in your blkid results:
+
+```
+UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,exec,auto  0 0
+```
+
+- Save the file with Ctrl X. Y key when asked.
+
+- Now reboot.
+
+
+
+
+
+
+
+
+
+
+### Configure Steam: 
+
+
+- Install Steam from the Software application in the dock. Search for Steam install the **Flatpak**.
+- Do the same by installing an application called Flatseal - this is what will bridge together your Steam flatpak and your games drive.
+- Once installed, browse to the horizontal line in the upper left corner, click to open it, search for Steam.
+&nbsp;
+&nbsp;
+&nbsp;
+
+**Setup Flatseal**
+&nbsp;
+&nbsp;
+&nbsp;
+
+- Open Flatseal.
+&nbsp;
+&nbsp;
+
+![In Flatseal, for Steam, set Filesystem, Other files as /media/steamgames](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/flatseal.png)
+&nbsp;
+&nbsp;
+&nbsp;
+- In Flatseal, for **Steam**, set **Filesystem**, Other files as **/media/steamgames**
+- Close Flatseal, just x out of it. Nothing to save.
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+- Open Steam, *launch Steam normally with a single left click*.
   
+![Locate and launch Steam normally](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/f39-steam1.png)
+
+**With Steam open.**
+
+- Upper left menu option called "Steam", pull down, select "Settings", go down to "Storage".
+- Click Add Drive, choose Add a new Steam library folder - the option will appear like it does here. Close the settings dialog.
+&nbsp;
+&nbsp;
+&nbsp;
+![Click Add Drive, choose Add a new Steam library folder](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/add-library.png)
+&nbsp;
+&nbsp;
+&nbsp;
+- Locate your game, install it to steamgames drive.&nbsp;
+
+![Locate your game, install it to steamgames drive](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/install-game.png)
+&nbsp;
+&nbsp;
+&nbsp;
+- Right click on the game, goto properties.
+  
+![Right click on the game, goto properties](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/f39-steam2.png)
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+**Launch options section for dGPU users**
+
+- Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
+
+```
+DRI_PRIME=1 %command%
+```
+- Close the General box at the X, there is no save button or anything like that.
+
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+-------------------------------------------------------
+
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
 
