@@ -6,7 +6,7 @@ A simple application to verify if desired applications are running with discrete
 
 Step 1: Open a terminal window and download the AppImage to your desired directory.
 
-- Ubuntu, Activities, search terminal. Fedora, horizonal line in the upper right, search terminal.
+- Ubuntu, Activities, search terminal. Fedora, horizontal line in the upper right, search terminal.
 - Copy and paste in the following depending on your specific distro listed below, followed by the enter key.
 
 *Ubuntu 22.04 users*:
@@ -90,7 +90,7 @@ Step 4: Run this to detect if the discrete card is used for that application.
 
 **Launch options section for dGPU users**
 
-- Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
+- Place the following into your launch options, to ensure you are using the discrete GPU and not the integrated GPU for your game.
 
 ```
 DRI_PRIME=1 %command%
@@ -149,7 +149,7 @@ ls -ld steamgames/
 ```
 - You should see something like: drwx------. 1 youruser youruser 0 Month  day 00:00 steamgames/
 
-- Now, we need to get this directory to a place where it indentfies as the secondary NVMe drive.
+- Now, we need to get this directory to a place where it identifies as the secondary NVMe drive.
 
 ```
 sudo blkid | grep 'steamgames' | awk '{print $0}'
@@ -222,7 +222,7 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 
 **Launch options section for dGPU users**
 
-- Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
+- Place the following into your launch options, to ensure you are using the discrete GPU and not the integrated GPU for your game.
 
 ```
 DRI_PRIME=1 %command%
@@ -280,7 +280,7 @@ DRI_PRIME=1 %command%
 
 **Launch options section for dGPU users**
 
-- Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
+- Place the following into your launch options, to ensure you are using the discrete GPU and not the integrated GPU for your game.
 
 ```
 DRI_PRIME=1 %command%
@@ -336,7 +336,7 @@ ls -ld steamgames/
 ```
 - You should see something like: drwx------. 1 youruser youruser 0 Month  day 00:00 steamgames/
 
-- Now, we need to get this directory to a place where it indentfies as the secondary NVMe drive.
+- Now, we need to get this directory to a place where it identifies as the secondary NVMe drive.
 
 ```
 sudo blkid | grep 'steamgames' | awk '{print $0}'
@@ -438,7 +438,7 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 
 **Launch options section for dGPU users**
 
-- Place the following into your launch options, to ensure you are using the discreete GPU and not the integated GPU for your game.
+- Place the following into your launch options, to ensure you are using the discrete GPU and not the integrated GPU for your game.
 
 ```
 DRI_PRIME=1 %command%
