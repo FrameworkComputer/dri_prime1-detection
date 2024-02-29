@@ -106,6 +106,20 @@ DRI_PRIME=1 %command%
 &nbsp;
 &nbsp;
 
+**NOTE:** Some games may need addtional GPU details
+In this case, we'd replace DRI_PRIME=1 %command% and test against:
+
+```
+sudo apt update && sudo apt install vulkan-tools -y && vulkaninfo | grep "GPU[0123]" -A 10
+```
+
+Verify GPU1 is indeed, AMD Radeon RX 7700S (RADV NAVI33).
+
+Now in the launch options:
+
+```
+DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command%
+```
 
 -------------------------------------------------------
 
@@ -231,6 +245,22 @@ DRI_PRIME=1 %command%
 
 &nbsp;
 &nbsp;
+
+**NOTE:** Some games may need addtional GPU details
+In this case, we'd replace DRI_PRIME=1 %command% and test against:
+
+```
+sudo apt update && sudo apt install vulkan-tools -y && vulkaninfo | grep "GPU[0123]" -A 10
+```
+
+Verify GPU1 is indeed, AMD Radeon RX 7700S (RADV NAVI33).
+
+Now in the launch options:
+
+```
+DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command%
+```
+
 &nbsp;&nbsp;
 &nbsp;
 &nbsp;
@@ -289,6 +319,21 @@ DRI_PRIME=1 %command%
 
 &nbsp;
 &nbsp;
+
+**NOTE:** Some games may need addtional GPU details
+In this case, we'd replace DRI_PRIME=1 %command% and test against:
+
+```
+sudo dnf install vulkan-tools -y && vulkaninfo | grep "GPU[0123]" -A 10
+```
+
+Verify GPU1 is indeed, AMD Radeon RX 7700S (RADV NAVI33).
+
+Now in the launch options:
+
+```
+DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command%
+```
 &nbsp;&nbsp;
 &nbsp;
 &nbsp;
@@ -370,13 +415,6 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 
 
 
-
-
-
-
-
-
-
 ### Configure Steam: 
 
 
@@ -447,6 +485,22 @@ DRI_PRIME=1 %command%
 
 &nbsp;
 &nbsp;
+
+**NOTE:** Some games may need addtional GPU details
+In this case, we'd replace DRI_PRIME=1 %command% and test against:
+
+```
+sudo dnf install vulkan-tools -y && vulkaninfo | grep "GPU[0123]" -A 10
+```
+
+Verify GPU1 is indeed, AMD Radeon RX 7700S (RADV NAVI33).
+
+Now in the launch options:
+
+```
+DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command%
+```
+
 &nbsp;&nbsp;
 &nbsp;
 &nbsp;
