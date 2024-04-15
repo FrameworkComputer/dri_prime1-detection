@@ -15,7 +15,7 @@ Step 1: Open a terminal window and download the AppImage to your desired directo
 sudo apt install libfuse2 python3-pyqt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
 ```
 
-*Fedora 39 users*:
+*Fedora users*:
 
 ```
 sudo dnf install python3-qt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
@@ -284,7 +284,7 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 
 
 
-  ## Steam game setup instructions for Fedora 39 - One NVMe drive
+  ## Steam game setup instructions for Fedora - One NVMe drive
 
 ### Configure Steam: 
 
@@ -354,7 +354,7 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 &nbsp;
 
 
-## Steam game setup instructions for Fedora 39 - Two NVMe drives, installing games to secondary drive
+## Steam game setup instructions for Fedora - Two NVMe drives, installing games to secondary drive
 
 ### Get your secondary drive ready
 
