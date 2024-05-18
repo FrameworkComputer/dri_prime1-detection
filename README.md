@@ -145,6 +145,14 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 &nbsp;
 &nbsp;
 &nbsp;
+### Beginner method:
+
+[Auto-mount second drive script.](https://github.com/FrameworkComputer/steam-drive-mounter/blob/main/README.md#steam-drive-mounter)
+
+&nbsp;
+&nbsp;
+
+### Advanced method:
 - Open a terminal from the horizontal line in the upper left, search Terminal and open it.
 
 ```
@@ -359,10 +367,19 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 ### Get your secondary drive ready
 
 ![Format to Ext4 in Disks](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/format.png)
+
+### Beginner method:
+
+[Auto-mount second drive script.](https://github.com/FrameworkComputer/steam-drive-mounter/blob/main/README.md#steam-drive-mounter)
+
+&nbsp;
+&nbsp;
+
+### Advanced method:
 - Open Disks program, label as steamgames,format to Ext4. Close Disks.
 &nbsp;
 &nbsp;
-&nbsp;
+
 - Open a terminal from the horizontal line in the upper left, search Terminal and open it.
 
 ```
