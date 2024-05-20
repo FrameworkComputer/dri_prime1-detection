@@ -146,14 +146,14 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 &nbsp;
 &nbsp;
 &nbsp;
-### Beginner method for 22.04 (**24.04 does not need this**):
+### Beginner method for 22.04/24.04:
 
 [Auto-mount second drive script.](https://github.com/FrameworkComputer/steam-drive-mounter/blob/main/README.md#steam-drive-mounter)
 
 &nbsp;
 &nbsp;
 
-### Advanced method for 22.04 (**24.04 does not need this**):
+### Advanced method for 22.04/24.04:
 - Open a terminal from the horizontal line in the upper left, search Terminal and open it.
 
 ```
