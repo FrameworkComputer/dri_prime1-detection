@@ -67,6 +67,7 @@ Step 4: Run this to detect if the discrete card is used for that application.
 
 ### Configure Steam: 
 
+- 
 - Download Steam from https://store.steampowered.com/about/
 - Once the Deb package is downloaded, right click in, install via Software Center.
 - Once installed, browse to Activities in the upper left corner, click to open it, search for Steam.
@@ -145,14 +146,14 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 &nbsp;
 &nbsp;
 &nbsp;
-### Beginner method:
+### Beginner method for 22.04 (**24.04 doees not need this**):
 
 [Auto-mount second drive script.](https://github.com/FrameworkComputer/steam-drive-mounter/blob/main/README.md#steam-drive-mounter)
 
 &nbsp;
 &nbsp;
 
-### Advanced method:
+### Advanced method for 22.04 (**24.04 doees not need this**):
 - Open a terminal from the horizontal line in the upper left, search Terminal and open it.
 
 ```
