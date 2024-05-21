@@ -70,7 +70,7 @@ Step 4: Run this to detect if the discrete card is used for that application.
 - 
 - Download Steam from https://store.steampowered.com/about/
 - Once the Deb package is downloaded, right click in, install via Software Center.
-- Once installed, browse to Activities in the upper left corner, click to open it, search for Steam.
+- Once installed, browse to Activities in the upper left corner, search for Steam, **right** click to open it selecting "Launch using integrated graphics."
   
 ![Locate and launch Steam using INTEGRATED graphics](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/Steam-1.png)
 
@@ -210,7 +210,8 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 
 - Download Steam from https://store.steampowered.com/about/
 - Once the Deb package is downloaded, right click in, install via Software Center.
-- Once installed, browse to Activities in the upper left corner, click to open it, search for Steam.
+- Once installed, browse to Activities in the upper left corner, search for Steam, **right** click to open it selecting "Launch using integrated graphics."
+
   
 ![Locate and launch Steam using INTEGRATED graphics](https://raw.githubusercontent.com/ctsdownloads/dri_prime1-detection/main/Steam-1.png)
 
