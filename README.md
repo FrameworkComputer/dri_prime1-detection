@@ -9,7 +9,7 @@ Step 1: Open a terminal window and download the AppImage to your desired directo
 - Ubuntu, Activities, search terminal. Fedora, horizontal line in the upper right, search terminal.
 - Copy and paste in the following depending on your specific distro listed below, followed by the enter key.
 
-*Ubuntu 22.04 users*:
+*Ubuntu LTS users*:
 
 ```
 sudo apt install libfuse2 python3-pyqt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
@@ -63,7 +63,7 @@ Step 4: Run this to detect if the discrete card is used for that application.
 &nbsp;
 
 
-## Steam game setup instructions for Ubuntu 22.04.3 LTS (Long Term Support) - One NVMe drive
+## Steam game setup instructions for Ubuntu LTS (Long Term Support) - One NVMe drive
 
 ### Configure Steam: 
 
@@ -137,7 +137,7 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 
 
 
-## Steam game setup instructions for Ubuntu 22.04.3 LTS (Long Term Support) - Two NVMe drives, installing games to secondary drive
+## Steam game setup instructions for Ubuntu LTS (Long Term Support) - Two NVMe drives, installing games to secondary drive
 
 ### Get your secondary drive ready
 
@@ -146,14 +146,14 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 &nbsp;
 &nbsp;
 &nbsp;
-### Beginner method for 22.04/24.04:
+### Beginner method for Ubuntu LTS:
 
 [Auto-mount second drive script.](https://github.com/FrameworkComputer/steam-drive-mounter/blob/main/README.md#steam-drive-mounter)
 
 &nbsp;
 &nbsp;
 
-### Advanced method for 22.04/24.04:
+### Advanced method for Ubuntu LTS:
 - Open a terminal from the horizontal line in the upper left, search Terminal and open it.
 
 ```
