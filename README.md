@@ -100,6 +100,9 @@ Step 4: Run this to detect if the discrete card is used for that application.
 ```
 DRI_PRIME=1 %command%
 ```
+
+![Type in DRI_PRIME=1 %command%](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/dri-prime.png)
+
 - Close the General box at the X, there is no save button or anything like that.
 
 &nbsp;
@@ -258,6 +261,9 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 ```
 DRI_PRIME=1 %command%
 ```
+
+![Type in DRI_PRIME=1 %command%](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/dri-prime.png)
+
 - Close the General box at the X, there is no save button or anything like that.
 
 &nbsp;
@@ -335,6 +341,9 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 ```
 DRI_PRIME=1 %command%
 ```
+
+![Type in DRI_PRIME=1 %command%](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/dri-prime.png)
+
 - Close the General box at the X, there is no save button or anything like that.
 
 &nbsp;
@@ -513,6 +522,9 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 ```
 DRI_PRIME=1 %command%
 ```
+
+![Type in DRI_PRIME=1 %command%](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/dri-prime.png)
+
 - Close the General box at the X, there is no save button or anything like that.
 
 &nbsp;
