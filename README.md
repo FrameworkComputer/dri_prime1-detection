@@ -225,8 +225,6 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 
 **With Steam open.**
 
-**With Steam open.**
-
 - Setup compatibility mode as shown below.
 ![Enable Steam Play to play Windows games on Ubuntu](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/proton.png)
 
@@ -317,6 +315,9 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 &nbsp;
 
 **With Steam open.**
+
+- Setup compatibility mode as shown below.
+![Enable Steam Play to play Windows games on Ubuntu](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/proton.png)
 
 - Locate your game installed already or install it.
 - Right click on the game, goto properties.
@@ -478,6 +479,9 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 ![Locate and launch Steam normally](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/f39-steam1.png)
 
 **With Steam open.**
+
+- Setup compatibility mode as shown below.
+![Enable Steam Play to play Windows games on Ubuntu](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/refs/heads/main/proton.png)
 
 - Upper left menu option called "Steam", pull down, select "Settings", go down to "Storage".
 - Click Add Drive, choose Add a new Steam library folder - the option will appear like it does here. Close the settings dialog.
