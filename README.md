@@ -479,7 +479,7 @@ UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   /media/steamgames  ext4  rw,users,ex
 &nbsp;
 &nbsp;
 &nbsp;
-- In Flatseal, for **Steam**, set **Filesystem**, Other files as **/media/steamgames**
+- In Flatseal, for **Steam**, set **Filesystem**, Other files as **/media/steamgames** (If you used the setup script, it will be **/media/YourUserName/steamgames** instead)
 - Close Flatseal, just x out of it. Nothing to save.
 
 &nbsp;
@@ -533,7 +533,7 @@ DRI_PRIME=1 %command%
 &nbsp;
 &nbsp;
 
-**NOTE:** Some games may need addtional GPU details
+**NOTE:** Some games may need addtional GPU details - AMD Radeon RX 7700S only
 In this case, we'd replace DRI_PRIME=1 %command% and test against:
 
 ```
