@@ -1,54 +1,40 @@
 # Discrete graphics usage detection
 
-A simple application to verify if desired applications are running with discrete graphics
+(Updated) Now recommending using nvtop for both AMD and NVIDIA dGPUs)
 
-## Indicates which processes are using discrete graphics, provides process name and ID.
+# Installing nvtop on Ubuntu and Fedora
 
-Step 1: Open a terminal window and download the AppImage to your desired directory.
+`nvtop` (NVIDIA TOP) is a real-time GPU monitoring tool similar to `htop`.  
+It shows GPU utilization, temperature, memory usage, and active processes.
 
-- Ubuntu, Activities, search terminal. Fedora, horizontal line in the upper right, search terminal.
-- Copy and paste in the following depending on your specific distro listed below, followed by the enter key.
+---
 
-*Ubuntu LTS users*:
+## Ubuntu
 
-```
-sudo apt install libfuse2 python3-pyqt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
-```
+### Install for Ubuntu
+```sudo apt update && sudo apt install nvtop```
 
-*Fedora users*:
+### Run
+`nvtop`
 
-```
-sudo dnf install python3-qt5 && wget https://github.com/FrameworkComputer/dri_prime1-detection/releases/download/AppImage/dGPU-detect.AppImage
-```
+---
 
-Step 2: Make it executable.
-```
-chmod +x dGPU-detect.AppImage
-```
+## Fedora
 
-Step 4: Run this to detect if the discrete card is used for that application.
+### Install for Fedora
+```sudo dnf install nvtop```
 
->TIP: Alt and Tab keys to move you off of an actively launched game. Thus, allowing you to launch the AppImage. Then Alt Tab back to the game.
+### Run
+`nvtop`
 
-`./dGPU-detect.AppImage` or simply double click the downloaded AppImage file.
+---
 
-**If the dGPU is not running applications:**
+## Usage
 
-![No dGPU running any applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/no-dgpu.png)
+- Launch with `nvtop` in the terminal  
+- Navigate with the arrow keys  
+- Press `q` to quit  
 
-
-**If the dGPU is running applications:**
-
-![dGPU running running applications](https://raw.githubusercontent.com/FrameworkComputer/dri_prime1-detection/main/yes-dgpu.png)
-
-&nbsp;
-&nbsp;
-&nbsp;&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 
 -------------------------------------------------------
