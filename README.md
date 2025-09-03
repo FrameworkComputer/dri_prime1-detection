@@ -558,6 +558,14 @@ DRI_PRIME=1 DXVK_FILTER_DEVICE_NAME="AMD Radeon RX 7700S (RADV NAVI33)" %command
 
 -------------------------------------------------------
 
+# Support for Proton (Steamdeck)
+
+By default, these settings will only enable Steam games that have specifically been compiled for Linux.
+
+To access the broader library of games that are accessible on devices like the Steamdeck via SteamOS, you will need to enable Proton compatibility under the Steam Settings menu. This option is available under "Compatibility" tab with the Steam -> Settings menu.
+
+![steam-setting-proton](https://github.com/user-attachments/assets/cc00ea8a-621e-4443-aaa7-d3bfa60b563d)
+
 &nbsp;
 &nbsp;
 &nbsp;&nbsp;
